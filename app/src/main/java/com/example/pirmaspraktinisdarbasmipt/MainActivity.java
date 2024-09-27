@@ -1,7 +1,6 @@
 package com.example.pirmaspraktinisdarbasmipt;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +16,6 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button btnToChangeText;
-    Button btnToChangeColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        btnToChangeColor = findViewById(R.id.btnToChangeColor);
         btnToChangeText = findViewById(R.id.btnToChangeText);
         TextView tvToChange = findViewById(R.id.tvToChange);
 
@@ -42,13 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        btnToChangeColor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvToChange.setTextColor(Color.parseColor("#F44849"));
-            }
 
-        });
 
 
 
